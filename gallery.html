@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Mauya Adventist High School</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Gallery responsive grid */
+        .gallery .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+            align-items: stretch;
+        }
+        .gallery .grid img{
+            width: 100%;
+            height: 160px; /* fixed row height for uniformity - adjust as needed */
+            object-fit: cover;
+            border-radius: 6px;
+            display: block;
+        }
+        @media (min-width: 900px){
+            .gallery .grid img{ height: 200px; }
+        }
+        @media (max-width: 420px){
+            .gallery .grid img{ height: 120px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <img src="assets/images/logo.png" alt="logo" class="logo">
+                <div>
+                    <h1>Mauya Adventist High School</h1>
+                    <p class="motto">Destined for excellence</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="departments.html">Departments</a>
+            <a href="activities.html">Activities</a>
+            <a href="church-activities.html">Church Activities</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="contact.html">Contact</a>
+                <a href="structural.html">Infrastructure</a>
+            </nav>
+        </div>
+    </header>
+    <div class="color-stripes" aria-hidden="true">
+        <span class="stripe blue"></span>
+        <span class="stripe green"></span>
+        <span class="stripe beige"></span>
+        <span class="stripe red"></span>
+        <span class="stripe yellow"></span>
+        <span class="stripe grey"></span>
+        <span class="stripe black"></span>
+    </div>
+
+    <main class="container main-content">
+        <section class="intro">
+            <h3>Photo Gallery</h3>
+            <p>Explore photos showcasing life at Mauya Adventist High School — academics, sports, events and everyday campus life.</p>
+        </section>
+
+        <section class="gallery">
+            <div class="grid">
+        <img src="file:///C:/Users/Chikwama/Desktop/project%20-%20Copy/assets/images/logo.png" alt="School Logo 1">
+        <img src="file:///C:/Users/Chikwama/Documents/WhatsApp%20Image%202025-10-12%20at%2011.12.05_2c5e6fa0.jpg" alt="School Bus">
+        <img src="file:///C:/Users/Chikwama/Downloads/Mauya-Adventist-School-4.jpg" alt="Gallery image 3">
+        <img src="file:///C:/Users/Chikwama/Desktop/project%20-%20Copy/20231125_152214.jpg" alt="Gallery image 4">
+        <img src="assets/images/gallery5.jpg" alt="Gallery image 5">
+        <img src="assets/images/gallery6.jpg" alt="Gallery image 6">
+        <img src="assets/images/gallery7.jpg" alt="Gallery image 7">
+        <img src="assets/images/gallery8.jpg" alt="Gallery image 8">
+        <img src="assets/images/gallery9.jpg" alt="Gallery image 9">
+        <img src="assets/images/gallery10.jpg" alt="Gallery image 10">
+        <img src="assets/images/gallery11.jpg" alt="Gallery image 11">
+        <img src="assets/images/gallery12.jpg" alt="Gallery image 12">
+        <img src="assets/images/gallery13.jpg" alt="Gallery image 13">
+        <img src="assets/images/gallery14.jpg" alt="Gallery image 14">
+        <img src="assets/images/gallery15.jpg" alt="Gallery image 15">
+        <img src="assets/images/gallery16.jpg" alt="Gallery image 16">
+        <img src="assets/images/gallery17.jpg" alt="Gallery image 17">
+        <img src="assets/images/gallery18.jpg" alt="Gallery image 18">
+        <img src="assets/images/gallery19.jpg" alt="Gallery image 19">
+        <img src="C:\Users\Chikwama\Desktop\project - Copy\Project pics\20250316_113827.jpg" alt="Gallery image 20">
+    </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <strong>Mauya Adventist High School</strong>
+                <p>2215 P.Bag Karoi<br>
+                Zimbabwe</p>
+            </div>
+            <div>
+                <hr><p>Phone: +263 775 940 225<br>
+                     <hr>     : +263 772 815 961 </p>
+                <hr><p>Email: info@mauyaadventisthigh.edu</p>
+            </div>
+        </div>
+        <div class="footer-marquee" aria-hidden="false">
+            <div class="container">
+                <div class="marquee-inner">
+                    <div class="marquee-text">
+                        <span>"Trust in the Lord with all your heart" — Proverbs 3:5</span>
+                        <span>"I can do all things through Christ who strengthens me" — Philippians 4:13</span>
+                        <span>"For God so loved the world" — John 3:16</span>
+                        <span>"The Lord is my shepherd; I shall not want" — Psalm 23:1</span>
+                        <span>"Let all that you do be done in love" — 1 Corinthians 16:14</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-counter">
+            <strong>Visitors:</strong> <span id="site-hit-count" aria-live="polite">—</span>
+        </div>
+        <p class="copyright">&copy; 2025 Mauya Adventist High School. Destined for excellence.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/hitcount.js"></script>
+        <style>
+            .site-copyright{ position:fixed; right:12px; bottom:10px; font-size:0.85rem; color:#fff; background:rgba(0,0,0,0.45); padding:6px 8px; border-radius:6px; z-index:9999; }
+            @media (max-width:420px){ .site-copyright{ font-size:0.75rem; padding:4px 6px; } }
+        </style>
+        <div class="site-copyright">© Tanatswa B Chitura</div>
+</body>
+</html>
